@@ -1,8 +1,11 @@
-include ../main-navigation/main-navigation
-.page-header__wrapper
-  h1.heading.page-header__heading Торты на заказ
-    span.heading__feature Ручная работа
-  .page__header__box
-    p.page-header__feature.page__header__feature--1 Натуральные ингредиенты
-    p.page-header__feature.page__header__feature--2 Доставка бесплатно при заказе от 2000 рублей<sup>*</sup>
-  a.button.page-header__button Выбрать торт
+header.page-header
+  include ../main-navigation/main-navigation
+  .page-header__wrapper
+    h1.heading.page-header__heading Торты на заказ<br>
+      em.heading__subheading Ручная работа
+    .page__header__box
+      p.page-header__feature.page__header__feature--1 Натуральные ингредиенты
+      p.page-header__feature.page__header__feature--2 Доставка бесплатно при заказе от 2000 рублей<sup>*</sup>
+    a.button.page-header__button(href="#") Выбрать торт
+|
+|

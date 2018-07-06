@@ -1,0 +1,32 @@
+[
+  {
+    "categoryName": "Классические",
+    "numberOfTypes": "24 вида",
+    "imgSrc": "img/category-1.jpeg"
+  },
+  {
+    "categoryName": "Муссовые",
+    "numberOfTypes": "12 видов",
+    "imgSrc": "img/category-2.jpeg"
+  },
+  {
+    "categoryName": "Свадебные",
+    "numberOfTypes": "20 видов",
+    "imgSrc": "img/category-3.jpeg"
+  },
+  {
+    "categoryName": "Мужчинам",
+    "numberOfTypes": "12 видов",
+    "imgSrc": "img/category-4.jpeg"
+  },
+  {
+    "categoryName": "Женщинам",
+    "numberOfTypes": "16 видов",
+    "imgSrc": "img/category-5.jpeg"
+  },
+  {
+    "categoryName": "Детские",
+    "numberOfTypes": "18 видов",
+    "imgSrc": "img/category-6.jpeg"
+  }
+]
