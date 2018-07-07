@@ -1,0 +1,17 @@
+mixin review(reviewImg, reviewAuthor, reviewAbout, reviewMessage, counter)
+  article.review
+    picture
+      img.review__image(src=reviewImg, alt=reviewAuthor)
+    .review__box
+      b.review__author= reviewAuthor
+      p.review__about= reviewAbout
+      p.review__message= reviewMessage
+        button.review__expand Развернуть
+      span.review__counter #{counter}/#{review.length}
+
+section.reviews
+  h2.reviews__heading Отзывы
+  ul.reviews__list
+    - for(var i = 0;  i < review.length; i++)
+      li.reviews__item
+        +review(review[i].img, review[i].author, review[i].about, review[i].message, i + 1)

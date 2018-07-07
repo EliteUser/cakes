@@ -1,0 +1,8 @@
+mixin order-size(sizeImg, sizeMass, sizeDiameter, sizeDescr, id)
+  .size__box
+    img.size__image(src=sizeImg, alt=sizeMass)
+    h4.size__title= sizeMass
+  p.size__descr= sizeDiameter
+  p.size__descr= sizeDescr
+  input.visually-hidden(type="radio", name="product-size", id= "size-" + id, value= id)
+  label.button.size__button(for= "size-" + id) Выбрать
