@@ -1,0 +1,15 @@
+mixin social(modifier)
+  ul.social(class=modifier)
+    li.social__item
+      a.social__link(href="#")
+        svg.social__icon(): use(xlink:href="#icon-in")
+        span.visually-hidden Instagram
+    li.social__item
+      a.social__link(href="#")
+        svg.social__icon(): use(xlink:href="#icon-vk")
+        span.visually-hidden VKontakte
+    li.social__item
+      a.social__link(href="#")
+        svg.social__icon(): use(xlink:href="#icon-tw")
+        span.visually-hidden Twitter
+//- TODO svg size
