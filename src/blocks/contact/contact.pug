@@ -1,23 +1,25 @@
 include ../social/social
 
 section.contact
-  h2.heading.contact__heading Контакты
+  h2.heading.contact__heading(id="contact") Контакты
+  .contact__wrapper
     em.heading__subheading.contact__subheading Остались вопросы?
-  p.contact__text Заполните форму ниже и наш кондитер свяжется с Вами
-  form.contact__form(action="#", method="post")
-    .contact__box
-      input.contact__input(type="text", id="user-name", name="name", placeholder="Ваше имя")
-      label.visually-hidden(for="user-name")
-    .contact__box
-      input.contact__input(type="email", id="user-email", name="email", placeholder="Email адрес")
-      label.visually-hidden(for="user-email")
-    .contact__box
-      textarea.contact__input.contact__input--large(id="user-message", name="message", placeholder="Ваш вопрос")
-      label.visually-hidden(for="user-message")
-    button.button.contact__button(type="submit") Отправить
-  p.contact__text Или позвоните по телефону:<br>
-    a.contact__link(href="tel:+79068999296") +7 906 899 92 96
-  p.contact__text Наша почта:
-    a.contact__link(href="mailto:bakerybypavel@mail.ru") bakerybypavel@mail.ru
-  p.contact__text Мы в соц. сетях:
-  +social("")
+    p.contact__text Заполните форму ниже и наш кондитер свяжется с Вами
+    form.contact__form(action="#", method="post")
+      .contact__box
+        input.contact__input(type="text", id="user-name", name="name", placeholder="Ваше имя")
+        label.visually-hidden(for="user-name") Ваше имя
+      .contact__box
+        input.contact__input(type="email", id="user-email", name="email", placeholder="Email адрес")
+        label.visually-hidden(for="user-email") Ваша электронная почта
+      .contact__box
+        textarea.contact__input.contact__input--large(id="user-message", name="message", placeholder="Ваш вопрос")
+        label.visually-hidden(for="user-message") Ваш вопрос
+      button.button.contact__button(type="submit") Отправить
+  .contact__wrapper
+    p.contact__text Или позвоните по телефону:<br>
+      a.contact__link(href="tel:+79068999296") +7 906 899 92 96
+    p.contact__text Наша почта:
+      a.contact__link(href="mailto:bakerybypavel@mail.ru") bakerybypavel@mail.ru
+    p.contact__text Мы в соц. сетях:
+    +social("")

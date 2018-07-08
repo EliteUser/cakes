@@ -1,9 +1,13 @@
 include ../category/category
 
 section.catalog
-  h2.heading.catalog__heading Наши торты
+  h2.heading.catalog__heading(id="catalog") Наши торты
   ul.catalog__list
     - for(var i = 0; i < catalog.length; i++)
-      li.catalog__item.category: +category(catalog[i].categoryName, catalog[i].numberOfTypes, catalog[i].imgSrc)
+      if(i == 0 || i == 5)
+        li.catalog__item.category.category--large: +category(catalog[i].categoryName, catalog[i].numberOfTypes, catalog[i].imgSrc)
+      else
+        li.catalog__item.category: +category(catalog[i].categoryName, catalog[i].numberOfTypes, catalog[i].imgSrc)
+
 |
 |

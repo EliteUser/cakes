@@ -10,7 +10,7 @@ mixin review(reviewImg, reviewAuthor, reviewAbout, reviewMessage, counter)
       span.review__counter #{counter}/#{review.length}
 
 section.reviews
-  h2.reviews__heading Отзывы
+  h2.reviews__heading(id="reviews") Отзывы
   ul.reviews__list
     - for(var i = 0;  i < review.length; i++)
       li.reviews__item

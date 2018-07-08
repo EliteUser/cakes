@@ -157,7 +157,7 @@ gulp.task('pug-build', ['pug:data'], function () {
     indent_size: 2,
     unformatted: [ // https://www.w3.org/TR/html5/dom.html#phrasing-content
       'abbr', 'area', 'bdi', 'bdo', 'br', 'cite',
-      'code', 'data', 'datalist', 'del', 'dfn', 'em', 'embed', 'i', 'ins', 'kbd', 'keygen', 'map', 'mark', 'math', 'meter', 'noscript',
+      'code', 'data', 'datalist', 'del', 'dfn', 'embed', 'i', 'ins', 'kbd', 'keygen', 'map', 'mark', 'math', 'meter', 'noscript',
       'object', 'output', 'progress', 'q', 'ruby', 's', 'samp', 'small',
       'strong', 'sub', 'sup', 'template', 'time', 'u', 'var', 'wbr', 'text',
       'acronym', 'address', 'big', 'dt', 'ins', 'strike', 'tt'
