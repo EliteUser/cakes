@@ -1,3 +1,5 @@
+include ../slider/slider
+
 mixin review(reviewImg, reviewAuthor, reviewAbout, reviewMessage, counter)
   article.review
     picture
@@ -11,7 +13,9 @@ mixin review(reviewImg, reviewAuthor, reviewAbout, reviewMessage, counter)
 
 section.reviews
   h2.reviews__heading(id="reviews") Отзывы
-  ul.reviews__list
-    - for(var i = 0;  i < review.length; i++)
-      li.reviews__item
-        +review(review[i].img, review[i].author, review[i].about, review[i].message, i + 1)
+  .slider.reviews__slider
+    +slider-controls("reviews-prev", "reviews-next")
+    ul.reviews__list.slider__inner
+      - for(var i = 0;  i < review.length; i++)
+        li.reviews__item.slider__item
+          +review(review[i].img, review[i].author, review[i].about, review[i].message, i + 1)

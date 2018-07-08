@@ -1,6 +1,7 @@
 include ../content/content
 include ../size/size
 include ../appearance/appearance
+include ../slider/slider
 
 section.order
   h2.heading.order__heading(id="order") Индивидуальный заказ
@@ -9,26 +10,32 @@ section.order
     ol.order__list
       li.order__item
         h3.order__option Выберите начинку
-        ul.order__sublist.slider
-          - for(var i = 0; i < order.content.length; i++)
-            li.order__subitem.slider__item.content
-              +order-content(order.content[i].img, order.content[i].name, order.content[i].descr, order.content[i].price, i + 1, order.content[i].id)
+        .slider(id="content-slider")
+          +slider-controls("content-prev", "content-next")
+          ul.order__sublist.slider__inner
+            - for(var i = 0; i < order.content.length; i++)
+              li.order__subitem.slider__item.content
+                +order-content(order.content[i].img, order.content[i].name, order.content[i].descr, order.content[i].price, i + 1, order.content[i].id)
       |
       |
       li.order__item
         h3.order__option Размер
-        ul.order__sublist.slider
-          - for(var i = 0; i < order.size.length; i++)
-            li.order__subitem.slider__item.size
-              +order-size(order.size[i].sizeImg, order.size[i].mass, order.size[i].diameter, order.size[i].description, order.size[i].id)
+        .slider(id="size-slider")
+          +slider-dots(order.size.length)
+          ul.order__sublist.slider__inner
+            - for(var i = 0; i < order.size.length; i++)
+              li.order__subitem.slider__item.size
+                +order-size(order.size[i].sizeImg, order.size[i].mass, order.size[i].diameter, order.size[i].description, order.size[i].id)
       |
       |
       li.order__item
         h3.order__option Оформление
-        ul.order__sublist.slider
-          - for(var i = 0; i < order.appearance.length; i++)
-            li.order__subitem.slider__item.appearance
-              +order-appearance(order.appearance[i].img, order.appearance[i].name, order.appearance[i].price, i + 1, order.appearance[i].id)
+        .slider(id="appearance-slider")
+          +slider-controls("appearance-prev", "appearance-next")
+          ul.order__sublist.slider__inner
+            - for(var i = 0; i < order.appearance.length; i++)
+              li.order__subitem.slider__item.appearance
+                +order-appearance(order.appearance[i].img, order.appearance[i].name, order.appearance[i].price, i + 1, order.appearance[i].id)
       |
       |
     include ../summary/summary
