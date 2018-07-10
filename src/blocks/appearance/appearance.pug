@@ -4,6 +4,6 @@ mixin order-appearance(appearanceImg, appearanceName, appearancePrice, counter, 
       img.appearance__image(src=appearanceImg, alt=appearanceName)
     h4.appearance__name= appearanceName
     b.appearance__price= appearancePrice
-    input.visually-hidden(type="radio", name="product-appearance", id= "appearance-" + id, value= id)
-    label.button.appearance__button(for= "appearance-" + id) Выбрать
+    input.visually-hidden(type="radio", name="productAppearance", id="appearance-" + id, value=appearanceName)
+    label.button.appearance__button(for="appearance-" + id) Выбрать
   span.appearance__counter #{counter}/#{order.appearance.length}

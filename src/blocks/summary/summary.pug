@@ -2,12 +2,11 @@
   h3.summary__heading Ваш выбор
   .summary__box
     p.summary__title Начинка
-    p.summary__choice Шоколадный ганаш
+    output.summary__output(name="contentOutput")
   .summary__box
     p.summary__title Размер
-    p.summary__choice 1 кг
+    output.summary__output(name="sizeOutput")
   .summary__box
     p.summary__title Оформление
-    p.summary__choice Маршмэллоу
-  //- TODO summary fields
+    output.summary__output(name="appearanceOutput")
   button.button.summary__button.order__button(type="submit") Заказать торт

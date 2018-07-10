@@ -139,7 +139,6 @@ gulp.task('pug:data', function () {
         // Extract the filename and strip the extension
         let filename = path.basename(file.path),
           primaryKey = filename.replace(path.extname(filename), '');
-
         // Set the filename as the primary key for our JSON data
         let data = {};
         data[primaryKey.toLowerCase()] = json;
@@ -147,12 +146,12 @@ gulp.task('pug:data', function () {
         return data;
       }
     }))
-    .pipe(gulp.dest(`${config.src}/temp`));
+    .pipe(gulp.dest("./temp"));
 });
 
 /* Сборка Pug */
 
-gulp.task('pug-build', ['pug:data'], function () {
+gulp.task('pug-build', function () {
   const options = {
     indent_size: 2,
     unformatted: [ // https://www.w3.org/TR/html5/dom.html#phrasing-content
@@ -167,8 +166,8 @@ gulp.task('pug-build', ['pug:data'], function () {
   return gulp.src(project.pages)
     .pipe(plumber())
     .pipe(data(function () {
-      if (fileExist(`${config.src}/temp/data.json`)) {
-        return JSON.parse(fs.readFileSync(`${config.src}/temp/data.json`))
+      if (fileExist("./temp/data.json")) {
+        return JSON.parse(fs.readFileSync("./temp/data.json"))
       }
     }))
     .pipe(pug({
@@ -181,11 +180,11 @@ gulp.task('pug-build', ['pug:data'], function () {
 /* Удаление data.json */
 
 gulp.task("data-remove", function () {
-  return del(`${config.src}/temp`);
+  return del("./temp");
 });
 
-gulp.task("pug", function () {
-  run("pug-build", "data-remove");
+gulp.task("pug", function (done) {
+  run("pug:data", "pug-build", "data-remove", done);
 });
 
 /* Удаление папки с билдом */
@@ -217,7 +216,6 @@ gulp.task("build", function (done) {
     "style",
     "sprite",
     "pug",
-    "data-remove",
     "js",
     done
   );

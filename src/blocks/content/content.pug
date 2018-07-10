@@ -6,6 +6,6 @@ mixin order-content(contentImg, contentName, contentDescr, contentPrice, counter
       h4.content__name= contentName
       p.content__descr= contentDescr
       b.content__price= contentPrice
-      input.visually-hidden(type="radio", name="product-content", id= "content-" + id, value= id)
-      label.button.content__button(for= "content-" + id) Выбрать
+      input.visually-hidden(type="radio", name="productContent", id="content-" + id, value=contentName)
+      label.button.content__button(for="content-" + id) Выбрать
   span.content__counter #{counter}/#{order.content.length}
