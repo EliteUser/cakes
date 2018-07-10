@@ -1,11 +1,9 @@
 mixin slider-controls(idPrev, idNext)
   .slider__controls
-    button.slider__button.slider__button--prev(id=idPrev)
-      span.visually-hidden Назад
-      svg.slider__icon: use(xlink:href="#icon-arrow")
-    button.slider__button.slider__button--next(id=idNext)
-      span.visually-hidden Вперед
-      svg.slider__icon: use(xlink:href="#icon-arrow")
+    button.slider__button.slider__button--prev(type="button", id=idPrev) Назад
+      svg.slider__icon(width="10", height="16"): use(xlink:href="#icon-arrow")
+    button.slider__button.slider__button--next(type="button", id=idNext) Вперед
+      svg.slider__icon(width="10", height="16"): use(xlink:href="#icon-arrow")
 
 mixin slider-dots(dotNumber)
   .slider__dots

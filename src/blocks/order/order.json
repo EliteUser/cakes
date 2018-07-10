@@ -1,14 +1,14 @@
 {
   "content": [
     {
-      "img": "img/content-1.jpeg",
+      "img": "img/content-1.jpg",
       "name": "Шоколадный ганаш",
       "descr": "Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!",
       "price": "1000 руб/кг",
       "id": "chocolate"
     },
     {
-      "img": "img/content-1.jpeg",
+      "img": "img/content-1.jpg",
       "name": "Супер торт",
       "descr": "Фирменный супер торт от нашего лучшего шеф-кондитера!",
       "price": "1500 руб/кг",
@@ -47,13 +47,13 @@
   ],
   "appearance": [
     {
-      "img": "img/appearance-1.jpeg",
+      "img": "img/appearance-1.jpg",
       "name": "Маршмэллоу",
       "price": "600 руб/кг",
       "id": "marshmallow"
     },
     {
-      "img": "img/appearance-2.jpeg",
+      "img": "img/appearance-2.jpg",
       "name": "Ягодное ассорти",
       "price": "700 руб/кг",
       "id": "berries"

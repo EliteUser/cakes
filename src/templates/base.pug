@@ -10,11 +10,12 @@ html(lang="ru").nojs
 
   body
     div(hidden)
-      //-include ../../build/img/sprite.svg
+      include ../../build/img/sprite.svg
     |
     |
-    include ../blocks/page-header/page-header
-    block content
-    include ../blocks/page-footer/page-footer
+    .container
+      include ../blocks/page-header/page-header
+      block content
+      include ../blocks/page-footer/page-footer
 
     script(src="js/main.min.js")

@@ -1,7 +1,7 @@
 mixin order-appearance(appearanceImg, appearanceName, appearancePrice, counter, id)
   .appearance__box
     picture
-      img.appearance__image(src=appearanceImg, alt=appearanceName)
+      img.appearance__image(src=appearanceImg, alt=appearanceName, width="169", height="196")
     h4.appearance__name= appearanceName
     b.appearance__price= appearancePrice
     input.visually-hidden(type="radio", name="productAppearance", id="appearance-" + id, value=appearanceName)
