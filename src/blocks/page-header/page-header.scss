@@ -1,2 +1,37 @@
 .page-header {
+  background: url("../img/page-header-sm.png") no-repeat top center;
+}
+
+.page-header__wrapper {
+  text-align: center;
+}
+
+.page-header__heading {
+  padding: 0 30px;
+  margin-top: 130px;
+  margin-bottom: 16px;
+}
+
+.page-header__heading .heading__subheading {
+  margin-top: 22px;
+}
+
+.page-header__box {
+  margin-bottom: 29px;
+}
+
+.page-header__feature {
+  padding: 5px 0 15px 62px;
+  margin: 0 0 8px;
+  text-align: left;
+  font-size: 14px;
+  color: $black;
+}
+
+.page-header__feature--1 {
+  background: url("../img/leaf.svg") no-repeat 20px 3px;
+}
+
+.page-header__feature--2 {
+  background: url("../img/gift.svg") no-repeat 20px 5px;
 }

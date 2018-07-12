@@ -1,0 +1,27 @@
+.button {
+  display: block;
+  width: 180px;
+  padding: 18px 0;
+  margin: 0 auto;
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $text-light;
+  background-color: $page-red;
+  border: none;
+  border-radius: 25px;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 15px 0 $shadow-red;
+  }
+
+  &:active {
+    background-color: darken($page-red, 5%);
+  }
+}
+
+.button--wide {
+  width: 226px;
+}

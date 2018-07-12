@@ -1,0 +1,131 @@
+.main-navigation {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.main-navigation__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 20px;
+  background-color: $text-light;
+
+}
+
+.main-navigation__logo {
+  @include fontPlayfair();
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: $black;
+}
+
+.main-navigation__button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  height: 25px;
+  padding: 0;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+
+  span {
+    position: relative;
+  }
+
+  span,
+  span::before,
+  span::after {
+    display: block;
+    width: 18px;
+    height: 2px;
+    background-color: $black;
+  }
+
+  span::before {
+    position: absolute;
+    content: "";
+    transform: translateY(-6px);
+  }
+
+  span::after {
+    position: absolute;
+    content: "";
+    transform: translateY(6px);
+  }
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-navigation__button--active {
+  span {
+    background-color: transparent;
+
+    &::before {
+      transform-origin: center;
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      transform-origin: center;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.main-navigation__list {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.main-navigation__list--active {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: block;
+  width: 100%;
+}
+
+.main-navigation__item:not(:last-child) .main-navigation__link {
+  box-shadow: inset 0 -1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.main-navigation__link {
+  display: block;
+  width: 100%;
+  padding: 14px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $text-darkgrey;
+  background-color: $navigation-bg;
+
+  &:hover {
+    background-color: darken($navigation-bg, 5%);
+  }
+
+  &:active {
+    background-color: darken($navigation-bg, 10%);
+  }
+}
+
+.main-navigation__phone {
+  display: none;
+}
+

@@ -1,0 +1,26 @@
+.heading {
+  @include fontPlayfair();
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: $text;
+}
+
+.heading--large {
+  font-size: 40px;
+  line-height: 34px;
+  letter-spacing: 3px;
+}
+
+.heading__subheading {
+  @include fontIntroScript();
+
+  display: block;
+  font-size: 22px;
+  line-height: 24px;
+  font-style: normal;
+  letter-spacing: 0;
+  color: $text-darkblue;
+}
