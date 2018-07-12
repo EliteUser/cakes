@@ -1,0 +1,20 @@
+.catalog {
+  padding-top: 44px;
+}
+
+.catalog__heading {
+  margin: 0 0 31px;
+}
+
+.catalog__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog__item:not(:last-child) {
+  margin-bottom: 10px;
+}

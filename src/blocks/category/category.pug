@@ -1,6 +1,7 @@
 mixin category(categoryName, numberOfTypes, imgSrc)
   a.category__link(href="#")
-    h3.category__name= categoryName
-    span.category__quantity= numberOfTypes
+    .category__box
+      h3.category__name= categoryName
+      span.category__quantity= numberOfTypes
     picture
       img(src=imgSrc, alt=categoryName, width="280", height="120")

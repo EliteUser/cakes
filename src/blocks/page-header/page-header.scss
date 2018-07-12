@@ -1,5 +1,5 @@
 .page-header {
-  background: url("../img/page-header-sm.png") no-repeat top center;
+  background: url("../img/page-header-sm.png") no-repeat center -165px;
 }
 
 .page-header__wrapper {
@@ -17,7 +17,8 @@
 }
 
 .page-header__box {
-  margin-bottom: 29px;
+  margin: 0 auto 29px auto;
+  max-width: 400px;
 }
 
 .page-header__feature {
