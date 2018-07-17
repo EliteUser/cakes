@@ -1,0 +1,75 @@
+.order {
+
+}
+
+.order__heading {
+  margin: 0 0 19px;
+  padding: 0 30px;
+
+  .heading__subheading {
+    margin-top: 7px;
+  }
+}
+
+.order__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.order__item {
+  position: relative;
+  margin: 0 20px;
+  background-color: $text-light;
+  counter-increment: i;
+
+  &::before {
+    @include fontPlayfair();
+
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    content: "0" counter(i);
+    font-size: 30px;
+    color: $page-red;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.order__option {
+  @include fontPlayfair();
+
+  min-height: 56px;
+  margin: 0;
+  padding: 20px 20px 18px 62px;
+  font-size: 16px;
+  color: $page-red;
+}
+
+.content__slider .slider__controls,
+.appearance__slider .slider__controls {
+  display: none;
+}
+
+.order__sublist {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-x: scroll;
+}
+
+.order__subitem {
+  flex-basis: 100%;
+  flex-shrink: 0;
+}
+
+.order input[type="radio"]:checked + .button {
+  box-shadow: 0 0 0 3px darken($page-red, 10%);
+}
+
+

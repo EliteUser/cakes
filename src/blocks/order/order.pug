@@ -6,11 +6,11 @@ include ../slider/slider
 section.order
   h2.heading.order__heading(id="order") Индивидуальный заказ
     em.heading__subheading Соберите торт в 3 шага
-  form.order__form(action="#", method="post", oninput="contentOutput.value=productContent.value;sizeOutput.value=productSize.value;appearanceOutput.value=productAppearance.value")
+  form.order__form(action="https://echo.htmlacademy.ru", method="post", oninput="contentOutput.value=productContent.value;sizeOutput.value=productSize.value;appearanceOutput.value=productAppearance.value")
     ol.order__list
       li.order__item
         h3.order__option Выберите начинку
-        .slider(id="content-slider")
+        .slider.content__slider(id="content-slider")
           +slider-controls("content-prev", "content-next")
           ul.order__sublist.slider__inner
             - for(var i = 0; i < order.content.length; i++)
@@ -20,7 +20,7 @@ section.order
       |
       li.order__item
         h3.order__option Размер
-        .slider(id="size-slider")
+        .slider.size__slider(id="size-slider")
           +slider-dots(order.size.length)
           ul.order__sublist.slider__inner
             - for(var i = 0; i < order.size.length; i++)
@@ -30,7 +30,7 @@ section.order
       |
       li.order__item
         h3.order__option Оформление
-        .slider(id="appearance-slider")
+        .slider.appearance__slider(id="appearance-slider")
           +slider-controls("appearance-prev", "appearance-next")
           ul.order__sublist.slider__inner
             - for(var i = 0; i < order.appearance.length; i++)

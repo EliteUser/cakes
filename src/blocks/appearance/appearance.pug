@@ -2,8 +2,9 @@ mixin order-appearance(appearanceImg, appearanceName, appearancePrice, counter, 
   .appearance__box
     picture
       img.appearance__image(src=appearanceImg, alt=appearanceName, width="169", height="196")
-    h4.appearance__name= appearanceName
-    b.appearance__price= appearancePrice
-    input.visually-hidden(type="radio", name="productAppearance", id="appearance-" + id, value=appearanceName)
-    label.button.appearance__button(for="appearance-" + id) Выбрать
-  span.appearance__counter #{counter}/#{order.appearance.length}
+    span.appearance__counter #{counter}/#{order.appearance.length}
+
+  h4.appearance__name= appearanceName
+  b.appearance__price= appearancePrice
+  input.visually-hidden(type="radio", name="productAppearance", id="appearance-" + id, value=appearanceName)
+  label.button.appearance__button(for="appearance-" + id) Выбрать

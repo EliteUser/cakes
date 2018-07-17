@@ -2,10 +2,10 @@ mixin order-content(contentImg, contentName, contentDescr, contentPrice, counter
   .content__box
     picture
       img.content__image(src=contentImg, alt=contentName, width="241", height="113")
-    .content__wrapper
-      h4.content__name= contentName
-      p.content__descr= contentDescr
-      b.content__price= contentPrice
-      input.visually-hidden(type="radio", name="productContent", id="content-" + id, value=contentName)
-      label.button.content__button(for="content-" + id) Выбрать
-  span.content__counter #{counter}/#{order.content.length}
+    span.content__counter #{counter}/#{order.content.length}
+
+  h4.content__name= contentName
+  p.content__descr= contentDescr
+  b.content__price= contentPrice
+  input.visually-hidden(type="radio", name="productContent", id="content-" + id, value=contentName)
+  label.button.content__button(for="content-" + id) Выбрать

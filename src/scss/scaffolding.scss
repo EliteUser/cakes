@@ -41,3 +41,13 @@ a {
   max-width: $screen-mobile;
   margin: 0 auto;
 }
+
+.nojs {
+  .page-header {
+    background-position: center 80px;
+  }
+
+  .main-navigation__list {
+    display: block;
+  }
+}

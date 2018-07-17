@@ -1,5 +1,6 @@
 .catalog {
   padding-top: 44px;
+  margin-bottom: 45px;
 }
 
 .catalog__heading {
@@ -9,12 +10,15 @@
 .catalog__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   margin: 0 auto;
   padding: 0;
   list-style: none;
 }
 
-.catalog__item:not(:last-child) {
-  margin-bottom: 10px;
+.catalog__item {
+  margin: 0 auto;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
