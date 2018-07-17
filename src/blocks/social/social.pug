@@ -2,13 +2,13 @@ mixin social(modifier)
   ul.social(class=modifier)
     li.social__item
       a.social__link(href="#")
-        svg.social__icon(width="32", height="32"): use(xlink:href="#icon-in")
+        svg.social__icon.social__icon--in(width="18", height="18"): use(xlink:href="#icon-in")
         span.visually-hidden Instagram
     li.social__item
       a.social__link(href="#")
-        svg.social__icon(width="42", height="26"): use(xlink:href="#icon-vk")
+        svg.social__icon.social__icon--vk(width="22", height="17"): use(xlink:href="#icon-vk")
         span.visually-hidden VKontakte
     li.social__item
       a.social__link(href="#")
-        svg.social__icon(width="34", height="29"): use(xlink:href="#icon-tw")
+        svg.social__icon.social__icon--tw(width="20", height="20"): use(xlink:href="#icon-tw")
         span.visually-hidden Twitter
