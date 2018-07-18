@@ -1,5 +1,6 @@
 .social {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -41,5 +42,17 @@
       margin-right: 0;
       margin-bottom: 15px;
     }
+  }
+}
+
+.social--big {
+  .social__link {
+    width: 63px;
+    height: 63px;
+  }
+
+  .social__icon {
+    width: 32px;
+    height: 32px;
   }
 }

@@ -2,10 +2,10 @@ include ../social/social
 
 section.contact
   h2.heading.contact__heading(id="contact") Контакты
-  .contact__wrapper
     em.heading__subheading.contact__subheading Остались вопросы?
-    p.contact__text Заполните форму ниже и наш кондитер свяжется с Вами
-    form.contact__form(action="#", method="post")
+  .contact__wrapper
+    p.contact__text.contact__text--narrow Заполните форму ниже и наш кондитер свяжется с Вами
+    form.contact__form(action="https://echo.htmlacademy.ru", method="post")
       .contact__box
         input.contact__input(type="text", id="user-name", name="name", placeholder="Ваше имя")
         label.visually-hidden(for="user-name") Ваше имя
@@ -21,5 +21,5 @@ section.contact
       a.contact__link(href="tel:+79068999296") +7 906 899 92 96
     p.contact__text Наша почта:
       a.contact__link(href="mailto:bakerybypavel@mail.ru") bakerybypavel@mail.ru
-    p.contact__text Мы в соц. сетях:
-    +social("")
+    p.contact__text.contact__text--narrow Мы в соц. сетях:
+    +social("social--big")

@@ -1,0 +1,47 @@
+.make-order {
+  padding: 30px 20px 126px;
+  margin-bottom: 33px;
+  color: $text-light;
+  background: $order url("../img/make-order-bg.jpg") no-repeat center bottom;
+}
+
+.make-order__heading {
+  margin: 0 0 31px;
+  color: $text-light;
+}
+
+.make-order__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.make-order__item {
+  padding-left: 47px;
+  position: relative;
+  counter-increment: num;
+
+  &::before {
+    @include fontPlayfair();
+
+    position: absolute;
+    top: -13px;
+    left: 20px;
+    content: counter(num);
+    font-size: 35px;
+    color: $text-light;
+  }
+}
+
+.make-order__step {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.make-order__descr {
+  margin: 0 0 22px;
+  font-size: 14px;
+}
+
