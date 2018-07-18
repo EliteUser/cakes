@@ -1,0 +1,48 @@
+.features {
+
+}
+
+.features__heading {
+  margin: 0 0 14px;
+
+  .heading__subheading {
+    margin-top: 5px;
+  }
+}
+
+.features__list {
+  margin: 0;
+  padding: 15px 20px;
+  list-style: none;
+  text-align: center;
+  background-color: $text-light;
+}
+
+.features__item {
+  padding: 70px 10px 0;
+}
+
+.features__item--1 {
+  margin-bottom: 4px;
+  background: url("../img/leaf.svg") no-repeat center 0;
+  background-size: 61px;
+}
+
+.features__item--2 {
+  background: url("../img/cake.png") no-repeat center 10px;
+  background-size: 84px 50px;
+}
+
+.features__name {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: $black;
+}
+
+.features__descr {
+  margin: 0;
+  font-size: 14px;
+  color: $black;
+}
