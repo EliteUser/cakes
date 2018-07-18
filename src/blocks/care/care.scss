@@ -1,0 +1,19 @@
+.care {
+  padding: 33px 20px 174px;
+  background: url("../img/care-bg.png") no-repeat center 166px;
+}
+
+.care__heading {
+  margin: 0 0 2px;
+  text-align: left;
+
+  .heading__subheading {
+    margin-top: 5px;
+  }
+}
+
+.care__text {
+  margin: 0;
+  font-size: 14px;
+  color: $black;
+}
