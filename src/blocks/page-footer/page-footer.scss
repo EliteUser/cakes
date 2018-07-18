@@ -1,0 +1,59 @@
+.page-footer {
+  padding: 40px 20px 10px;
+  background-color: $footer;
+  color: $text-light;
+}
+
+.page-footer__link--logo {
+  @include fontPlayfair();
+
+  display: block;
+  margin-bottom: 23px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.page-footer__list {
+  margin: 0 0 12px;
+  padding: 0;
+  list-style: none;
+}
+
+.page-footer__item {
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}
+
+.page-footer__link {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: $text-light;
+
+  &:hover {
+    opacity: 0.75;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.page-footer__phone {
+  display: block;
+  margin-bottom: 28px;
+  font-size: 14px;
+  color: $text-light;
+}
+
+.page-footer__social {
+  margin-bottom: 30px;
+}
+
+.page-footer__copyright {
+  margin: 0;
+  padding-top: 10px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
