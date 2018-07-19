@@ -24,6 +24,7 @@
 .page-header__feature {
   padding: 5px 0 15px 42px;
   margin: 0 0 8px;
+  min-height: 33px;
   text-align: left;
   font-size: 14px;
   color: $black;
@@ -35,4 +36,50 @@
 
 .page-header__feature--2 {
   background: url("../img/gift.svg") no-repeat left 5px;
+}
+
+@media screen and (min-width: $screen-tablet) {
+  .page-header {
+    background: url("../img/page-header-tb.png") no-repeat right 73px,
+    url("../img/page-header-tb-1.png") no-repeat 272px 90px;
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .page-header__heading {
+    margin: 103px 0 60px;
+    max-width: 300px;
+    font-size: 60px;
+    line-height: 55px;
+    text-align: left;
+    letter-spacing: 4px;
+
+    .heading__subheading {
+      margin-top: 31px;
+      font-size: 36px;
+    }
+  }
+
+  .page-header__box {
+    display: flex;
+    flex-direction: row;
+    order: 1;
+    margin: 0 0 20px;
+    max-width: 550px;
+  }
+
+  .page-header__feature {
+    padding: 20px 10px 5px 66px;
+    margin-bottom: 0;
+    min-height: 60px;
+    background-size: 55px;
+  }
+
+  .page-header__button {
+    margin: 0 0 145px;
+  }
 }
