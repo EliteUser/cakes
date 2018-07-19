@@ -3,11 +3,11 @@
 }
 
 .page-header__wrapper {
+  padding: 0 6.25%;
   text-align: center;
 }
 
 .page-header__heading {
-  padding: 0 30px;
   margin-top: 130px;
   margin-bottom: 16px;
 }
@@ -22,7 +22,7 @@
 }
 
 .page-header__feature {
-  padding: 5px 0 15px 62px;
+  padding: 5px 0 15px 42px;
   margin: 0 0 8px;
   text-align: left;
   font-size: 14px;
@@ -30,9 +30,9 @@
 }
 
 .page-header__feature--1 {
-  background: url("../img/leaf.svg") no-repeat 20px 3px;
+  background: url("../img/leaf.svg") no-repeat left 3px;
 }
 
 .page-header__feature--2 {
-  background: url("../img/gift.svg") no-repeat 20px 5px;
+  background: url("../img/gift.svg") no-repeat left 5px;
 }
