@@ -24,3 +24,19 @@
   letter-spacing: 0;
   color: $text-darkblue;
 }
+
+@media screen and (min-width: $screen-tablet) {
+  .heading {
+    font-size: 28px;
+  }
+
+  .heading--large {
+    font-size: 60px;
+    line-height: 55px;
+    letter-spacing: 4px;
+
+    .heading__subheading {
+      font-size: 36px;
+    }
+  }
+}

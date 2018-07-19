@@ -5,9 +5,9 @@ section.catalog
   ul.catalog__list
     - for(var i = 0; i < catalog.length; i++)
       if(i == 0 || i == 5)
-        li.catalog__item.category.category--large: +category(catalog[i].categoryName, catalog[i].numberOfTypes, catalog[i].imgSrc)
+        li.catalog__item.category.catalog__item--large: +category(catalog[i].categoryName, catalog[i].numberOfTypes, catalog[i].img)
       else
-        li.catalog__item.category: +category(catalog[i].categoryName, catalog[i].numberOfTypes, catalog[i].imgSrc)
+        li.catalog__item.category: +category(catalog[i].categoryName, catalog[i].numberOfTypes, catalog[i].img)
 
 |
 |

@@ -1,7 +1,9 @@
-mixin category(categoryName, numberOfTypes, imgSrc)
+mixin category(categoryName, numberOfTypes, img)
   a.category__link(href="#")
     .category__box
       h3.category__name= categoryName
       span.category__quantity= numberOfTypes
     picture
-      img(src=imgSrc, alt=categoryName, width="280", height="120")
+      source(media="(min-width: 1366px)" srcset=img.dt2x + " 2x," + img.dt + " 1x")
+      source(media="(min-width: 768px)" srcset=img.tb2x + " 2x," + img.tb + " 1x" sizes="(mmi-width: 768px) 288px")
+      img(src=img.sm, alt=categoryName, srcset=img.sm2x + " 2x")

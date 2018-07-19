@@ -2,31 +2,73 @@
   {
     "categoryName": "Классические",
     "numberOfTypes": "24 вида",
-    "imgSrc": "img/category-1.jpg"
+    "img": {
+      "sm": "img/category-1-sm.jpg",
+      "sm2x": "img/category-1-sm@2x.jpg",
+      "tb": "img/category-1-tb.jpg",
+      "tb2x": "img/category-1-tb@2x.jpg",
+      "dt": "img/category-1-dt.jpg",
+      "dt2x": "img/category-1-dt@2x.jpg"
+    }
   },
   {
     "categoryName": "Муссовые",
     "numberOfTypes": "12 видов",
-    "imgSrc": "img/category-2.jpg"
+    "img": {
+      "sm": "img/category-2-sm.jpg",
+      "sm2x": "img/category-2-sm@2x.jpg",
+      "tb": "img/category-2-tb.jpg",
+      "tb2x": "img/category-2-tb@2x.jpg",
+      "dt": "img/category-2-dt.jpg",
+      "dt2x": "img/category-2-dt@2x.jpg"
+    }
   },
   {
     "categoryName": "Свадебные",
     "numberOfTypes": "20 видов",
-    "imgSrc": "img/category-3.jpg"
+    "img": {
+      "sm": "img/category-3-sm.jpg",
+      "sm2x": "img/category-3-sm@2x.jpg",
+      "tb": "img/category-3-tb.jpg",
+      "tb2x": "img/category-3-tb@2x.jpg",
+      "dt": "img/category-3-dt.jpg",
+      "dt2x": "img/category-3-dt@2x.jpg"
+    }
   },
   {
     "categoryName": "Мужчинам",
     "numberOfTypes": "12 видов",
-    "imgSrc": "img/category-4.jpg"
+    "img": {
+      "sm": "img/category-4-sm.jpg",
+      "sm2x": "img/category-4-sm@2x.jpg",
+      "tb": "img/category-4-tb.jpg",
+      "tb2x": "img/category-4-tb@2x.jpg",
+      "dt": "img/category-4-dt.jpg",
+      "dt2x": "img/category-4-dt@2x.jpg"
+    }
   },
   {
     "categoryName": "Женщинам",
     "numberOfTypes": "16 видов",
-    "imgSrc": "img/category-5.jpg"
+    "img": {
+      "sm": "img/category-5-sm.jpg",
+      "sm2x": "img/category-5-sm@2x.jpg",
+      "tb": "img/category-5-tb.jpg",
+      "tb2x": "img/category-5-tb@2x.jpg",
+      "dt": "img/category-5-dt.jpg",
+      "dt2x": "img/category-5-dt@2x.jpg"
+    }
   },
   {
     "categoryName": "Детские",
     "numberOfTypes": "18 видов",
-    "imgSrc": "img/category-6.jpg"
+    "img": {
+      "sm": "img/category-6-sm.jpg",
+      "sm2x": "img/category-6-sm@2x.jpg",
+      "tb": "img/category-6-tb.jpg",
+      "tb2x": "img/category-6-tb@2x.jpg",
+      "dt": "img/category-6-dt.jpg",
+      "dt2x": "img/category-6-dt@2x.jpg"
+    }
   }
 ]
