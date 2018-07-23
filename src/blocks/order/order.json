@@ -1,14 +1,24 @@
 {
   "content": [
     {
-      "img": "img/content-1.jpg",
+      "img": {
+        "sm": "img/content-1-sm.jpg",
+        "sm2x": "img/content-1-sm@2x.jpg",
+        "lg": "img/content-1-lg.jpg",
+        "lg2x": "img/content-1-lg@2x.jpg"
+      },
       "name": "Шоколадный ганаш",
       "descr": "Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!",
       "price": "1000 руб/кг",
       "id": "chocolate"
     },
     {
-      "img": "img/content-1.jpg",
+      "img": {
+        "sm": "img/content-1-sm.jpg",
+        "sm2x": "img/content-1-sm@2x.jpg",
+        "lg": "img/content-1-lg.jpg",
+        "lg2x": "img/content-1-lg@2x.jpg"
+      },
       "name": "Супер торт",
       "descr": "Фирменный супер торт от нашего лучшего шеф-кондитера!",
       "price": "1500 руб/кг",
@@ -47,16 +57,26 @@
   ],
   "appearance": [
     {
-      "img": "img/appearance-1.jpg",
-      "name": "Маршмэллоу",
-      "price": "600 руб/кг",
-      "id": "marshmallow"
-    },
-    {
-      "img": "img/appearance-2.jpg",
+      "img": {
+        "sm": "img/appearance-2-sm.jpg",
+        "sm2x": "img/appearance-2-sm@2x.jpg",
+        "lg": "img/appearance-2-lg.jpg",
+        "lg2x": "img/appearance-2-lg@2x.jpg"
+      },
       "name": "Ягодное ассорти",
       "price": "700 руб/кг",
       "id": "berries"
+    },
+    {
+      "img": {
+        "sm": "img/appearance-1-sm.jpg",
+        "sm2x": "img/appearance-1-sm@2x.jpg",
+        "lg": "img/appearance-1-lg.jpg",
+        "lg2x": "img/appearance-1-lg@2x.jpg"
+      },
+      "name": "Маршмэллоу",
+      "price": "600 руб/кг",
+      "id": "marshmallow"
     }
   ]
 }

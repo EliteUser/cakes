@@ -71,4 +71,51 @@
   box-shadow: 0 0 0 3px darken($page-red, 10%);
 }
 
+@media screen and (min-width: $screen-tablet) {
+  .order__heading {
+    margin-bottom: 34px;
+
+    .heading__subheading {
+      margin-top: 11px;
+      letter-spacing: 1.7px;
+    }
+  }
+
+  .order__item {
+    margin: 0 20px;
+    position: relative;
+    box-shadow: 0 5px 12.7px 0.3px rgba(163, 6, 60, 0.1);
+
+    &::before {
+      top: 28px;
+      left: 45px;
+      font-size: 36px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 21px;
+    }
+  }
+
+  .order__option {
+    position: absolute;
+    top: 70px;
+    left: 45px;
+    padding: 0;
+    max-width: 120px;
+    font-size: 18px;
+  }
+
+  .order input[type="radio"]:checked + .size__button {
+    box-shadow: none;
+  }
+
+  .order input[type="radio"]:checked ~ .size__box::before {
+    visibility: visible;
+  }
+
+  .order input[type="radio"]:checked + .appearance__button {
+    box-shadow: 0 7px 12px 2px rgba(0, 0, 0, 0.1);
+  }
+}
 

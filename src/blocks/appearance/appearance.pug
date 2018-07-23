@@ -1,7 +1,8 @@
 mixin order-appearance(appearanceImg, appearanceName, appearancePrice, counter, id)
   .appearance__box
     picture
-      img.appearance__image(src=appearanceImg, alt=appearanceName, width="169", height="196")
+      source(media="(min-width: 768px)" srcset=appearanceImg.lg2x + " 2x," + appearanceImg.lg + " 1x" sizes="(min-width: 768px) 195px, (min-width: 1366px) 321px")
+      img.appearance__image(src=appearanceImg.sm, alt=appearanceName, srcset=appearanceImg.sm2x + " 2x")
     span.appearance__counter #{counter}/#{order.appearance.length}
 
   h4.appearance__name= appearanceName

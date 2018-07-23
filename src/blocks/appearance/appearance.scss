@@ -11,7 +11,9 @@
 }
 
 .appearance__image {
-  box-shadow: 0 2px 5px 0 rgba(163, 6, 60, 0.1);
+  width: 169px;
+  height: 196px;
+  box-shadow: 0 7px 12px 1px rgba(0, 0, 0, 0.1);
 }
 
 .appearance__counter {
@@ -40,4 +42,68 @@
 
 .appearance__button {
   margin-top: auto;
+}
+
+@media screen and (min-width: $screen-tablet) {
+  .appearance__slider {
+    padding: 30px 84px 25px 208px;
+    background: url("../img/appearance-bg.png") no-repeat 3px 121px;
+    background-size: 119px;
+  }
+
+  .order__subitem.appearance {
+    flex-basis: auto;
+  }
+
+  .appearance {
+    position: relative;
+    padding: 0;
+    margin: 10px;
+    min-height: 263px;
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+
+  .appearance__box {
+    margin-bottom: -60px;
+  }
+
+  .appearance__image {
+    width: 196px;
+    height: 263px;
+  }
+
+  .appearance__name {
+    position: relative;
+  }
+
+  .appearance__price {
+    position: relative;
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+
+  .appearance__button {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    padding: 0;
+    width: auto;
+    font-size: 0;
+    background-color: transparent;
+    border-radius: 0;
+
+    &:hover {
+      box-shadow: 0 7px 12px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      background-color: transparent;
+    }
+  }
 }

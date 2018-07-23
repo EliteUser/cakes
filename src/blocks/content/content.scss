@@ -1,4 +1,5 @@
 .content {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,6 +24,13 @@
   color: $text-light;
 }
 
+.content__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
 .content__name {
   margin: 0 0 5px;
   font-size: 16px;
@@ -45,4 +53,58 @@
   text-align: center;
   font-size: 18px;
   color: $text-dark;
+}
+
+@media screen and (min-width: $screen-tablet) {
+  .content {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 53px 80px 56px 23px;
+  }
+
+  .content__slider {
+    padding-left: 150px;
+  }
+
+  .content__box {
+    margin-bottom: 0;
+  }
+
+  .content__image {
+    width: 210px;
+    height: 239px;
+  }
+
+  .content__counter {
+    bottom: 54px;
+    right: 73px;
+    color: $text-grey;
+  }
+
+  .content__wrapper {
+    align-items: flex-start;
+    margin-left: 25px;
+    padding-top: 23px;
+    max-width: 200px;
+  }
+
+  .content__name {
+    font-size: 18px;
+  }
+
+  .content__descr {
+    margin-bottom: 10px;
+  }
+
+  .content__price {
+    margin-bottom: 27px;
+    font-size: 20px;
+  }
+
+  .content__button {
+    margin-left: 0;
+    padding: 14px 0;
+    width: 135px;
+    font-size: 10px;
+  }
 }

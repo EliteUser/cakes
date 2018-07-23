@@ -43,3 +43,40 @@
   margin-top: 30px;
   width: 226px;
 }
+
+@media screen and (min-width: $screen-tablet) {
+  .summary {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin: 0 20px;
+    padding-top: 0;
+    padding-bottom: 46px;
+    box-shadow: 0 5px 10px 0.3px rgba(163, 6, 60, 0.1);
+  }
+
+  .summary__heading {
+    font-size: 18px;
+    flex-basis: 100%;
+  }
+
+  .summary__box {
+    min-width: 160px;
+    margin-bottom: 0;
+    margin-right: 20px;
+    align-items: flex-start;
+
+    &:nth-child(3) {
+      min-width: 74px;
+    }
+  }
+
+  .summary__button {
+    width: 160px;
+    padding: 14px 0;
+    margin: 0 0 0 auto;
+    font-size: 10px;
+  }
+}
