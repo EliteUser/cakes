@@ -72,6 +72,10 @@
 }
 
 @media screen and (min-width: $screen-tablet) {
+  .order {
+    margin-bottom: 0;
+  }
+
   .order__heading {
     margin-bottom: 34px;
 
