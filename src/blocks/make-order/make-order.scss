@@ -45,3 +45,39 @@
   font-size: 14px;
 }
 
+@media screen and (min-width: $screen-tablet) {
+  .make-order {
+    background: $order url("../img/make-order-tb.jpg") no-repeat left top;
+    padding-top: 47px;
+    padding-bottom: 64px;
+    margin-bottom: 44px;
+  }
+
+  .make-order__heading {
+    padding-left: 66px;
+    margin-bottom: 37px;
+  }
+
+  .make-order__list {
+    max-width: 61%;
+    margin-left: auto;
+  }
+
+  .make-order__item {
+    padding-left: 60px;
+    padding-right: 30px;
+
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  .make-order__step {
+    margin-bottom: 5px;
+  }
+
+  .make-order__descr {
+    margin: 0;
+  }
+}
+
