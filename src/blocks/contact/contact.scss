@@ -88,4 +88,53 @@
   color: $black;
 }
 
+@media screen and (min-width: $screen-tablet) {
+  .contact {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 0;
+    padding-bottom: 82px;
+    background: url("../img/contact-bg.png") no-repeat 327px bottom;
+  }
+
+  .contact__heading {
+    flex-basis: 100%;
+    text-align: left;
+    margin-bottom: 18px;
+
+    .heading__subheading {
+      text-align: left;
+    }
+  }
+
+  .contact__wrapper {
+    max-width: 346px;
+  }
+
+  .contact__wrapper--small {
+    width: auto;
+    max-width: none;
+    margin-left: 66px;
+  }
+
+  .contact__text--narrow {
+    max-width: 250px;
+    margin-bottom: 13px;
+  }
+
+  .contact__input--large {
+    margin-bottom: 28px;
+  }
+
+  .contact__button {
+    width: 160px;
+    margin-left: 0;
+    padding: 14px 0;
+  }
+
+  .contact .social {
+    margin-top: 20px;
+  }
+}
 
