@@ -17,3 +17,20 @@
   font-size: 14px;
   color: $black;
 }
+
+@media screen and (min-width: $screen-tablet) {
+  .care {
+    margin-top: -97px;
+    padding: 167px 6.25% 130px;
+    background: url("../img/care-bg-large.png") no-repeat right top;
+  }
+
+  .care__heading .heading__subheading {
+    font-size: 26px;
+    margin: 9px 0 8px;
+  }
+
+  .care__text {
+    max-width: 50%;
+  }
+}
