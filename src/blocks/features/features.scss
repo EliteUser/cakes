@@ -42,3 +42,38 @@
   font-size: 14px;
   color: $black;
 }
+
+@media screen and (min-width: $screen-tablet) {
+  .features {
+    padding: 0 6.25% 90px;
+    background: url("../img/features-bg.png") no-repeat left 5px;
+  }
+
+  .features__heading .heading__subheading {
+    margin-top: 12px;
+    font-size: 26px;
+  }
+
+  .features__list {
+    max-width: 50%;
+    padding: 0;
+    margin: 53px 25px 40px auto;
+    background-color: transparent;
+  }
+
+  .features__item {
+    padding: 10px 0 4px 80px;
+    text-align: left;
+  }
+
+  .features__item--1 {
+    margin-bottom: 1px;
+    background-position: 10px 10px;
+    background-size: 48px;
+  }
+
+  .features__item--2 {
+    background-position: left 13px;
+    background-size: 63px 38px;
+  }
+}
