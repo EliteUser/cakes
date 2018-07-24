@@ -1,12 +1,6 @@
 .about {
   margin-bottom: 40px;
   padding: 0 6.25%;
-
-  picture {
-    display: inline-flex;
-    margin-right: 32px;
-    margin-bottom: 12px;
-  }
 }
 
 .about__heading {
@@ -14,7 +8,11 @@
 }
 
 .about__image {
-  display: block;
+  display: inline-flex;
+  margin-right: 32px;
+  margin-bottom: 12px;
+  width: 155px;
+  height: 155px;
 }
 
 .about__social {
@@ -55,8 +53,81 @@
   font-style: italic;
   text-align: center;
   background: url("../img/quotes.png") no-repeat center 26px;
+  background-size: 26px 17px;
 
   p {
     margin: 0 0 21px;
+  }
+}
+
+@media screen and (min-width: $screen-tablet) {
+  .about {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    margin-bottom: 63px;
+  }
+
+  .about__image {
+    position: absolute;
+    top: 0;
+    right: 6.25%;
+    margin: 0;
+    width: 311px;
+    height: 311px;
+  }
+
+  .about__heading {
+    max-width: 50%;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+
+  .about__subheading {
+    max-width: 50%;
+    font-size: 15px;
+  }
+
+  .about__subheading--italic {
+    max-width: 50%;
+    font-size: 26px;
+  }
+
+  .about__text {
+    max-width: 50%;
+    margin-bottom: 8px;
+  }
+
+  .about__social {
+    max-width: 50%;
+    order: 1;
+    flex-direction: row;
+    margin-top: 6px;
+
+    .social__item:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: 20px;
+    }
+  }
+
+  .about__quote {
+    order: 2;
+    max-width: 50%;
+    margin: 0 auto;
+    padding-top: 74px;
+    font-size: 14px;
+    line-height: 21px;
+    background-size: 35px 22px;
+    background-position: center 34px;
+
+    p {
+      margin-bottom: 24px;
+    }
+  }
+
+  .about__sign {
+    width: 82px;
+    height: 40px;
   }
 }

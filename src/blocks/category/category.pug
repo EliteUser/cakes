@@ -5,5 +5,5 @@ mixin category(categoryName, numberOfTypes, img)
       span.category__quantity= numberOfTypes
     picture
       source(media="(min-width: 1366px)" srcset=img.dt2x + " 2x," + img.dt + " 1x")
-      source(media="(min-width: 768px)" srcset=img.tb2x + " 2x," + img.tb + " 1x" sizes="(mmi-width: 768px) 288px")
+      source(media="(min-width: 768px)" srcset=img.tb2x + " 2x," + img.tb + " 1x" sizes="(min-width: 768px) 288px")
       img(src=img.sm, alt=categoryName, srcset=img.sm2x + " 2x")
