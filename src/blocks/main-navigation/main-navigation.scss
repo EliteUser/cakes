@@ -169,3 +169,54 @@
     }
   }
 }
+
+@media screen and (min-width: $screen-desktop) {
+  .main-navigation {
+    position: static;
+    align-items: baseline;
+    padding: 60px 73px 0;
+    background-color: transparent;
+  }
+
+  .main-navigation__box {
+    min-height: auto;
+    margin-right: 36px;
+  }
+
+  .main-navigation__logo {
+    font-size: 23px;
+  }
+
+  .main-navigation__button {
+    display: none;
+  }
+
+  .main-navigation__list {
+    position: static;
+    display: flex;
+  }
+
+  .main-navigation__item:not(:last-child) {
+    margin-right: 23px;
+  }
+
+  .main-navigation__link {
+    padding: 10px;
+    font-size: 13px;
+    color: $text;
+    background-color: transparent;
+
+    &:hover {
+      color: $page-red;
+      background-color: transparent;
+    }
+
+    &:active {
+      opacity: 0.7;
+    }
+  }
+
+  .main-navigation__item:not(:last-child) .main-navigation__link {
+    box-shadow: none;
+  }
+}
