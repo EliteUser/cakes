@@ -40,3 +40,23 @@
     }
   }
 }
+
+@media screen and (min-width: $screen-desktop) {
+  .heading {
+    font-size: 40px;
+  }
+
+  .heading__subheading {
+    font-size: 35px;
+  }
+
+  .heading--large {
+    font-size: 78px;
+    line-height: 70px;
+    letter-spacing: 6px;
+
+    .heading__subheading {
+      font-size: 41px;
+    }
+  }
+}

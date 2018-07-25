@@ -79,3 +79,27 @@
     margin: 0 0 145px;
   }
 }
+
+@media screen and (min-width: $screen-tablet) {
+  .page-header {
+    padding: 60px 73px 290px;
+    margin-bottom: -57px;
+    background: url("../img/page-header-dt.png") no-repeat right 104px;
+  }
+
+  .page-header__wrapper {
+    padding: 0;
+  }
+
+  .page-header__heading {
+    margin: 140px 0 70px;
+
+    .heading__subheading {
+      margin-top: 34px;
+    }
+  }
+
+  .page-header__button {
+    margin-bottom: 124px;
+  }
+}
