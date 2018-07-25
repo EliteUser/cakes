@@ -26,7 +26,8 @@
 @media screen and (min-width: $screen-tablet) {
   .catalog {
     padding: 50px 20px 0;
-    margin-bottom: 37px;
+    margin: 0 auto 37px auto;
+    max-width: 768px;
   }
 
   .catalog__heading {
@@ -40,6 +41,7 @@
 
   .catalog__item {
     margin: 0;
+    flex-shrink: 0;
     box-shadow: 0 7px 10px 3px rgba(163, 6, 60, 0.05);
 
     &:hover {
@@ -51,7 +53,7 @@
     }
 
     &:nth-child(3) {
-      margin-left: 440px;
+      margin-left: auto;
       margin-top: -204px;
     }
 

@@ -95,7 +95,7 @@
     align-items: flex-start;
     margin-bottom: 0;
     padding-bottom: 82px;
-    background: url("../img/contact-bg.png") no-repeat 327px bottom;
+    background: url("../img/contact-bg.png") no-repeat calc(100% + 144px) bottom;
   }
 
   .contact__heading {
@@ -109,12 +109,11 @@
   }
 
   .contact__wrapper {
-    max-width: 346px;
+    width: 346px;
   }
 
   .contact__wrapper--small {
-    width: auto;
-    max-width: none;
+    width: 250px;
     margin-left: 66px;
   }
 

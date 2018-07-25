@@ -41,8 +41,7 @@
 @media screen and (min-width: $screen-tablet) {
   .page-header {
     margin-bottom: 74px;
-    background: url("../img/page-header-tb.png") no-repeat right 73px,
-    url("../img/page-header-tb-1.png") no-repeat 272px 90px;
+    background: url("../img/page-header-tb.png") no-repeat right 73px;
   }
 
   .page-header__wrapper {

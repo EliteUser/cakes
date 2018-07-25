@@ -59,7 +59,8 @@
   .content {
     flex-direction: row;
     align-items: flex-start;
-    padding: 53px 80px 56px 23px;
+    justify-content: center;
+    padding: 53px 120px 56px 23px;
   }
 
   .content__slider {
@@ -68,6 +69,7 @@
 
   .content__box {
     margin-bottom: 0;
+    flex-shrink: 0;
   }
 
   .content__image {

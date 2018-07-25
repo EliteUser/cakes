@@ -46,9 +46,14 @@
 
 @media screen and (min-width: $screen-tablet) {
   .appearance__slider {
-    padding: 30px 84px 25px 208px;
+    padding: 20px 84px 15px 198px;
     background: url("../img/appearance-bg.png") no-repeat 3px 121px;
     background-size: 119px;
+
+    .slider__inner {
+      margin: 0 auto;
+      max-width: 446px;
+    }
   }
 
   .order__subitem.appearance {
@@ -58,11 +63,19 @@
   .appearance {
     position: relative;
     padding: 0;
-    margin: 10px;
+    margin: 20px;
     min-height: 263px;
 
     &:not(:last-child) {
-      margin-right: 15px;
+      margin-right: 5px;
+    }
+
+    &:last-child {
+      padding-right: 20px;
+
+      .appearance__button {
+        margin-right: 20px;
+      }
     }
   }
 
