@@ -77,3 +77,46 @@
     background-size: 63px 38px;
   }
 }
+
+@media screen and (min-width: $screen-desktop) {
+  .features {
+    padding: 31px 73px 195px;
+    background-image: url("../img/features-bg-large.png");
+  }
+
+  .features__heading {
+    margin-bottom: 126px;
+
+    .heading__subheading {
+      margin-top: 42px;
+      font-size: 35px;
+    }
+  }
+
+  .features__list {
+    margin: 0 82px 50px auto;
+  }
+
+  .features__item {
+    max-width: 500px;
+    padding-left: 100px;
+  }
+
+  .features__item--1 {
+    margin-bottom: 24px;
+    background-position: 19px 21px;
+    background-size: 61px;
+  }
+
+  .features__item--2 {
+    background-size: 80px 48px;
+  }
+
+  .features__name {
+    font-size: 20px;
+  }
+
+  .features__descr {
+    font-size: 20px;
+  }
+}
