@@ -124,3 +124,55 @@
     text-align: right;
   }
 }
+
+@media screen and (min-width: $screen-desktop) {
+  .reviews {
+    margin-bottom: 150px;
+    padding: 113px 300px 20px;
+    background-size: 547px;
+  }
+
+  .reviews__heading {
+    margin-bottom: 28px;
+  }
+
+  .review {
+    padding: 10px 0 0 60px;
+  }
+
+  .review__image {
+    margin-right: 54px;
+    width: 209px;
+    height: 209px;
+  }
+
+  .review__box {
+    width: 430px;
+    padding-top: 25px;
+  }
+
+  .review__author {
+    font-size: 27px;
+  }
+
+  .review__about {
+    margin-bottom: 24px;
+    font-size: 20px;
+  }
+
+  .review__message {
+    max-width: 370px;
+    margin: 0 0 10px;
+    font-size: 18.5px;
+    line-height: 24.5px;
+  }
+
+  .review__expand {
+    display: inline;
+    font-size: 18px;
+  }
+
+  .review__counter {
+    font-size: 18px;
+  }
+}
