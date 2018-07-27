@@ -34,3 +34,21 @@
     max-width: 50%;
   }
 }
+
+@media screen and (min-width: $screen-desktop) {
+  .care {
+    margin-top: -176px;
+    padding: 342px 73px 257px;
+    background-image: url("../img/care-bg-desktop.png");
+  }
+
+  .care__heading .heading__subheading {
+    margin: 34px 0 16px;
+    font-size: 35px;
+  }
+
+  .care__text {
+    max-width: 40%;
+    font-size: 20px;
+  }
+}
