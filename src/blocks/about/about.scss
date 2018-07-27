@@ -131,3 +131,58 @@
     height: 40px;
   }
 }
+
+@media screen and (min-width: $screen-desktop) {
+  .about {
+    margin-bottom: 104px;
+    padding: 27px 73px;
+  }
+
+  .about__heading {
+    margin-bottom: 31px;
+  }
+
+  .about__image {
+    right: 145px;
+    width: 508px;
+    height: 508px;
+  }
+
+  .about__subheading {
+    font-size: 20px;
+  }
+
+  .about__subheading--italic {
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 38px;
+  }
+
+  .about__text {
+    margin-bottom: 18px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .about__social {
+    margin-bottom: 184px;
+  }
+
+  .about__quote {
+    max-width: 55%;
+    font-size: 25px;
+    line-height: 38px;
+    background-size: 60px;
+    background-position: center top;
+
+    p {
+      letter-spacing: 0.8px;
+      margin-bottom: 44px;
+    }
+  }
+
+  .about__sign {
+    width: 149px;
+    height: 73px;
+  }
+}
