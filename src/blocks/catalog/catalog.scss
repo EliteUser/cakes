@@ -45,7 +45,7 @@
     box-shadow: 0 7px 10px 3px rgba(163, 6, 60, 0.05);
 
     &:hover {
-      box-shadow: 0 7px 10px 3px  rgba(163, 6, 60, 0.15);
+      box-shadow: 0 7px 10px 3px rgba(163, 6, 60, 0.15);
     }
 
     &:not(:last-child) {
@@ -69,5 +69,33 @@
   .catalog__item--large {
     width: 419px;
     height: 388px;
+  }
+}
+
+@media screen and (min-width: $screen-tablet) {
+  .catalog {
+    padding: 0 73px;
+    margin: 0 0 64px;
+    max-width: 1366px;
+  }
+
+  .catalog__heading {
+    margin-bottom: 70px;
+  }
+
+  .catalog__item {
+    &:not(:last-child) {
+      margin-bottom: 44px;
+    }
+
+    &:nth-child(3),
+    &:nth-child(6) {
+      margin-top: -348px;
+    }
+  }
+
+  .catalog__item--large {
+    width: 695px;
+    height: 652px;
   }
 }

@@ -97,3 +97,35 @@
     }
   }
 }
+
+@media screen and (min-width: $screen-tablet) {
+  .category {
+    width: 483px;
+    height: 304px;
+  }
+
+  .category__box {
+    padding: 36px 45px;
+  }
+
+  .category__link {
+    &::before {
+      bottom: 38px;
+      right: 75px;
+    }
+
+    &::after {
+      bottom: 32px;
+      right: 110px;
+      font-size: 20px;
+    }
+  }
+
+  .category__name {
+    font-size: 24px;
+  }
+
+  .category__quantity {
+    font-size: 20px;
+  }
+}
