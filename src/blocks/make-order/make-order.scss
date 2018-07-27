@@ -81,3 +81,40 @@
   }
 }
 
+@media screen and (min-width: $screen-desktop) {
+  .make-order {
+    margin-bottom: 80px;
+    padding: 114px 20px;
+    min-height: 703px;
+    background-image: url("../img/make-order-dt.jpg");
+  }
+
+  .make-order__heading {
+    max-width: 515px;
+    margin: 0 0 38px auto;
+    padding: 0;
+    line-height: initial;
+    text-align: left;
+  }
+
+  .make-order__list {
+    max-width: 539px;
+  }
+
+  .make-order__item {
+    &::before {
+      top: -27px;
+      left: 15px;
+      font-size: 64px;
+    }
+  }
+
+  .make-order__step {
+    font-size: 21px;
+  }
+
+  .make-order__descr {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
