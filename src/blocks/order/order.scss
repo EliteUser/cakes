@@ -123,3 +123,39 @@
   }
 }
 
+@media screen and (min-width: $screen-desktop) {
+  .order {
+
+  }
+
+  .order__heading {
+    margin-bottom: 56px;
+
+    .heading__subheading {
+      margin-top: 27px;
+      font-weight: 400;
+      letter-spacing: 0;
+    }
+  }
+
+  .order__item {
+    margin: 0 73px;
+
+    &::before {
+      top: 48px;
+      left: 82px;
+      font-size: 58px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+  }
+
+  .order__option {
+    left: 80px;
+    top: 118px;
+    font-size: 27px;
+  }
+}
+

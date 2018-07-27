@@ -68,7 +68,7 @@
     margin-right: 20px;
     align-items: flex-start;
 
-    &:nth-child(3) {
+    &:nth-of-type(2) {
       min-width: 74px;
     }
   }
@@ -78,5 +78,51 @@
     padding: 14px 0;
     margin: 0 0 0 auto;
     font-size: 10px;
+  }
+}
+
+@media screen and (min-width: $screen-desktop) {
+  .summary {
+    margin: 0 73px;
+    padding: 0 73px 71px;
+  }
+
+  .summary__heading {
+    margin-bottom: 19px;
+    font-size: 27px;
+  }
+
+  .summary__box {
+    min-width: 249px;
+    margin-right: 0;
+
+    &:nth-of-type(2) {
+      min-width: 137px;
+    }
+
+    &:not(:last-of-type) {
+      margin-right: 83px;
+    }
+  }
+
+  .summary__title {
+    font-size: 27px;
+  }
+
+  .summary__output {
+    min-height: 45px;
+    padding: 8px 3px;
+    font-size: 18px;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid #c1b0af;
+    border-radius: 0;
+  }
+
+  .summary__button {
+    padding: 18px 0;
+    margin-right: 18px;
+    width: 226px;
+    font-size: 13px;
   }
 }
