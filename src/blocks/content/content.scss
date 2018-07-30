@@ -60,11 +60,12 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    padding: 53px 120px 56px 23px;
+    padding: 53px 20px 56px 23px;
   }
 
   .content__slider {
     padding-left: 150px;
+    padding-right: 100px;
   }
 
   .content__box {
@@ -111,14 +112,15 @@
   }
 }
 
-@media screen and (min-width: $screen-tablet) {
+@media screen and (min-width: $screen-desktop) {
   .content {
     justify-content: flex-start;
-    padding: 88px 120px 93px 46px;
+    padding: 88px 46px 93px;
   }
 
   .content__slider {
     padding-left: 250px;
+    padding-right: 200px;
   }
 
   .content__image {
