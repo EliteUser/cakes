@@ -6,6 +6,13 @@
   padding: 0 6.25% 25px;
 }
 
+.content__slider {
+  .slider__controls {
+    top: 35px;
+    padding: 0 calc(0.2 * calc(100vw - 320px));
+  }
+}
+
 .content__box {
   position: relative;
   margin-bottom: 38px;
@@ -66,9 +73,18 @@
   .content__slider {
     padding-left: 150px;
     padding-right: 100px;
+
+    .slider__controls {
+      top: 43%;
+      z-index: 3;
+      width: 80%;
+      transform: translateX(-47%);
+      padding: 0;
+    }
   }
 
   .content__box {
+    position: static;
     margin-bottom: 0;
     flex-shrink: 0;
   }
@@ -121,6 +137,11 @@
   .content__slider {
     padding-left: 250px;
     padding-right: 200px;
+
+    .slider__controls {
+      top: 46%;
+      width: 76%;
+    }
   }
 
   .content__image {

@@ -5,6 +5,13 @@
   text-align: center;
 }
 
+.size__slider {
+  .slider__controls {
+    top: 65px;
+    padding: 0 calc(0.2 * calc(100vw - 320px));
+  }
+}
+
 .size__box {
   position: relative;
   display: flex;
@@ -14,6 +21,8 @@
 }
 
 .size__image {
+  width: 110px;
+  height: 110px;
 }
 
 .size__title {

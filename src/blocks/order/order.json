@@ -87,7 +87,7 @@
       },
       "name": "Ягодное ассорти",
       "price": "700 руб/кг",
-      "id": "berries"
+      "id": "berries1"
     },
     {
       "img": {
@@ -98,7 +98,7 @@
       },
       "name": "Маршмэллоу",
       "price": "600 руб/кг",
-      "id": "marshmallow"
+      "id": "marshmallow2"
     }
   ]
 }

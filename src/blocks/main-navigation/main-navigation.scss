@@ -116,6 +116,33 @@
   color: $text;
 }
 
+.nojs {
+  @media screen and (max-width: 1365px) {
+    .main-navigation {
+      padding: 0;
+      flex-wrap: wrap;
+    }
+
+    .main-navigation__box {
+      padding: 0 6.25%;
+    }
+
+    .main-navigation__list {
+      display: block;
+      flex-basis: 100%;
+      order: 1;
+    }
+
+    .main-navigation__button {
+      display: none;
+    }
+
+    .main-navigation__phone {
+      margin-right: 6.25%;
+    }
+  }
+}
+
 @media screen and (min-width: $screen-tablet) {
   .main-navigation__box {
     min-height: 60px;

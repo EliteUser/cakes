@@ -4,8 +4,3 @@ mixin slider-controls(idPrev, idNext)
       svg.slider__icon(width="10", height="16"): use(xlink:href="#icon-arrow")
     button.slider__button.slider__button--next(type="button", id=idNext) Вперед
       svg.slider__icon(width="10", height="16"): use(xlink:href="#icon-arrow")
-
-mixin slider-dots(dotNumber)
-  .slider__dots
-    - for(var i = 0; i < dotNumber; i++)
-        span.slider__dot

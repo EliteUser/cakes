@@ -14,17 +14,17 @@ section.order
           +slider-controls("content-prev", "content-next")
           ul.order__sublist.slider__inner
             - for(var i = 0; i < order.content.length; i++)
-              li.order__subitem.slider__item.content
+              li.order__subitem.content.slider__item
                 +order-content(order.content[i].img, order.content[i].name, order.content[i].descr, order.content[i].price, i + 1, order.content[i].id)
       |
       |
       li.order__item
         h3.order__option Размер
         .slider.size__slider(id="size-slider")
-          +slider-dots(order.size.length)
+          +slider-controls("size-prev", "size-next")
           ul.order__sublist.slider__inner
             - for(var i = 0; i < order.size.length; i++)
-              li.order__subitem.slider__item.size
+              li.order__subitem.size.slider__item
                 +order-size(order.size[i].sizeImg, order.size[i].mass, order.size[i].diameter, order.size[i].description, order.size[i].id)
       |
       |
@@ -34,7 +34,7 @@ section.order
           +slider-controls("appearance-prev", "appearance-next")
           ul.order__sublist.slider__inner
             - for(var i = 0; i < order.appearance.length; i++)
-              li.order__subitem.slider__item.appearance
+              li.order__subitem.appearance.slider__item
                 +order-appearance(order.appearance[i].img, order.appearance[i].name, order.appearance[i].price, i + 1, order.appearance[i].id)
       |
       |

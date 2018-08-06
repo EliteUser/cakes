@@ -38,6 +38,21 @@
   background: url("../img/gift.svg") no-repeat left 5px;
 }
 
+.nojs {
+  @media screen and (max-width: 1365px) {
+    .page-header {
+      background-position: center 80px;
+    }
+
+    @media screen and (min-width: $screen-tablet) {
+      .page-header {
+        margin-bottom: 74px;
+        background: url("../img/page-header-tb.png") no-repeat right 336px;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: $screen-tablet) {
   .page-header {
     margin-bottom: 74px;

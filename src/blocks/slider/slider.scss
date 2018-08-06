@@ -1,5 +1,105 @@
-/* TODO add markup via js */
+.slider {
+  position: relative;
+}
+
+.slider--js {
+
+  .slider__controls {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .slider__dots {
+    display: block;
+  }
+
+  .slider__inner {
+    position: relative;
+    overflow: initial;
+  }
+
+  .slider__item {
+    position: absolute;
+    display: none;
+  }
+
+  .slider__item--show {
+    position: relative;
+    display: flex;
+  }
+}
+
+.slider__controls {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  width: 100%;
+}
+
+.slider__button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16);
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    content: "";
+    width: 100%;
+    height: 100%;
+  }
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.16);
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.slider__button--prev {
+  .slider__icon {
+    transform: rotate(-180deg);
+  }
+}
+
+.slider__icon {
+  display: block;
+  margin: auto;
+  fill: $arrow;
+}
+
 .slider__inner {
   overflow-x: scroll;
   overflow-y: hidden;
 }
+
+@media screen and (min-width: $screen-tablet) {
+  .slider--js.size__slider {
+    .slider__controls {
+      display: none;
+    }
+
+    .slider__item {
+      position: relative;
+      display: flex;
+    }
+  }
+}
+
+
