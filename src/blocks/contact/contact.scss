@@ -95,7 +95,8 @@
     align-items: flex-start;
     margin-bottom: 0;
     padding-bottom: 82px;
-    background: url("../img/contact-bg.png") no-repeat calc(100% + 144px) bottom;
+    background: url("../img/contact-bg.png") no-repeat;
+    background-position: calc(100% + 144px) bottom;
   }
 
   .contact__heading {
@@ -140,7 +141,8 @@
 @media screen and (min-width: $screen-desktop) {
   .contact {
     padding: 0 73px 270px;
-    background: url("../img/contact-bg-large.jpg") no-repeat calc(100% + 68px) bottom;
+    background: url("../img/contact-bg-large.jpg") no-repeat;
+    background-position: calc(100% + 68px) bottom;
   }
 
   .contact__heading {

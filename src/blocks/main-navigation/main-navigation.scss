@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 40px;
+  height: 40px;
   width: 100%;
 }
 
@@ -145,7 +145,7 @@
 
 @media screen and (min-width: $screen-tablet) {
   .main-navigation__box {
-    min-height: 60px;
+    height: 60px;
     width: auto;
   }
 

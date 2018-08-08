@@ -35,6 +35,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 300px;
   flex-grow: 1;
 }
 
@@ -46,6 +47,7 @@
 }
 
 .content__descr {
+  max-width: 100%;
   margin: 0 0 15px;
   font-size: 14px;
   text-align: left;
@@ -68,6 +70,7 @@
     align-items: flex-start;
     justify-content: center;
     padding: 53px 20px 56px 23px;
+    flex-grow: 1;
   }
 
   .content__slider {
@@ -113,6 +116,7 @@
 
   .content__descr {
     margin-bottom: 10px;
+    max-width: 300px;
   }
 
   .content__price {

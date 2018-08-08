@@ -3,7 +3,6 @@
 }
 
 .slider--js {
-
   .slider__controls {
     display: flex;
     justify-content: space-between;
@@ -15,7 +14,7 @@
 
   .slider__inner {
     position: relative;
-    overflow: initial;
+    overflow: visible;
   }
 
   .slider__item {
@@ -42,10 +41,9 @@
 .slider__button {
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 40px;
   height: 40px;
+  padding: 0;
   font-size: 0;
   background-color: #ffffff;
   border: none;

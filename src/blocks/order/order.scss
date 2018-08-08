@@ -58,7 +58,7 @@
 }
 
 .order__subitem {
-  flex-basis: 100%;
+  width: 100%;
   flex-shrink: 0;
 }
 
@@ -99,6 +99,10 @@
     &:not(:last-child) {
       margin-bottom: 21px;
     }
+  }
+
+  .order__subitem {
+    width: auto;
   }
 
   .order__option {

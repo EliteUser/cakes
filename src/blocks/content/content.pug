@@ -1,7 +1,7 @@
 mixin order-content(contentImg, contentName, contentDescr, contentPrice, counter, id)
   .content__box
     picture
-      source(media="(min-width: 768px)" srcset=contentImg.lg2x + " 2x," + contentImg.lg + " 1x" sizes="(min-width: 768px) 210px, (min-width: 1366px) 344px")
+      source(media="(min-width: 768px)" srcset=contentImg.lg2x + " 2x," + contentImg.lg + " 1x")
       img.content__image(src=contentImg.sm, alt=contentName, srcset=contentImg.sm2x + " 2x")
     span.content__counter #{counter}/#{order.content.length}
 

@@ -8,6 +8,31 @@ navButton.addEventListener("click", function () {
   navList.classList.toggle("main-navigation__list--active");
 });
 
+var orderForm = document.querySelector(".order__form");
+
+orderForm.addEventListener("change", function () {
+  for (let i = 0; i < orderForm.elements.productContent.length; i++) {
+    if (orderForm.elements.productContent[i].checked === true) {
+      orderForm.elements.contentOutput.value = orderForm.elements.productContent[i].value;
+      return;
+    }
+  }
+
+  for (let i = 0; i < orderForm.elements.productSize.length; i++) {
+    if (orderForm.elements.productSize[i].checked === true) {
+      orderForm.elements.sizeOutput.value = orderForm.elements.productSize[i].value;
+      return;
+    }
+  }
+
+  for (let i = 0; i < orderForm.elements.productAppearance.length; i++) {
+    if (orderForm.elements.productAppearance[i].checked === true) {
+      orderForm.elements.appearanceOutput.value = orderForm.elements.productAppearance[i].value;
+      return;
+    }
+  }
+});
+
 var contentSlider = document.querySelector(".content__slider");
 var sizeSlider = document.querySelector(".size__slider");
 var appearanceSlider = document.querySelector(".appearance__slider");

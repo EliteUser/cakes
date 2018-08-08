@@ -2,6 +2,7 @@ include ../slider/slider
 
 mixin review(reviewImg, reviewAuthor, reviewAbout, reviewMessage, counter)
   article.review
+    h3.visually-hidden Отзыв от #{reviewAuthor}
     img.review__image(src=reviewImg, alt=reviewAuthor, width="58", height="58")
     .review__box
       b.review__author= reviewAuthor
